@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_primary">#2196F3</color>
+    <color name="theme_primary_dark">#1976D2</color>
+    <color name="theme_accent">#FF5722</color>
+    <color name="primary_text">#484848</color>
+    <color name="secondary_text">#727272</color>
+    <color name="theme_primary_light">#66bcbcbc</color>
+    <color name="text_color_hint">#c4c4c4</color>
+    <color name="text_color_accent">#FF5722</color>
+    <color name="grey">#7fa6a3a3</color>
+    <color name="white">#ffffff</color>
+    <color name="white_pressed_light">#f2f2f2</color>
+    <color name="tab_active">#e5e5e3</color>
+    <color name="tab_inactive">#fafafa</color>
+    <color name="divider_color">#B6B6B6</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="perfect_black">#000000</color>
+    <color name="splash_background">#2196F3</color>
+    <color name="green_dark">@android:color/holo_green_dark</color>
+
+    <color name="primary">#E43F3F</color>
+    <color name="primary_dark">#E12929</color>
+    <color name="primary_darker">#CC1D1D</color>
+    <color name="accent">#FFFFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+
+    <color name="colorPrimary">#0072BC</color>
+    <color name="colorPrimaryDark">#004f83</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#328ec9</color>
+    <color name="errorred">#cc0000</color>
+
+    <color name="mb_blue">#ff0099cc</color>
+    <color name="mb_blue_dark">#ff00719b</color>
+
+    <color name="mb_green">#ff99cc00</color>
+    <color name="mb_green_dark">#ff6d9b00</color>
+
+    <color name="background">#fffafa</color>
+
+    <color name="task0">#0a8b1f</color>
+    <color name="task1">#a4b973</color>
+    <color name="task2">#c4bd57</color>
+    <color name="task3">#da6b0a</color>
+    <color name="task4">#f50f0f</color>
+
+</resources>

@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "631863682702",
+    "project_id": "poised-shift-130008"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631863682702:android:79e47e7c39ca472c",
+        "android_client_info": {
+          "package_name": "com.elecatrach.poc.electrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2wCeWvi7NqfYQ4g1YauUC4qlvW992sTY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

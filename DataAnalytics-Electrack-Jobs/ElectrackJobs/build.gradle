@@ -1,0 +1,69 @@
+buildscript {
+    ext {
+        springBootVersion = '1.3.1.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath "io.spring.gradle:dependency-management-plugin:0.5.3.RELEASE"
+    }
+}
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'spring-boot'
+apply plugin: 'maven-publish'
+apply plugin: "io.spring.dependency-management"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
+}
+
+jar {
+    baseName = 'ElectrackJobs'
+    version = '0.0.1-SNAPSHOT'
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            // TODO: Where to place these properties?
+            groupId 'com.electrack'
+            artifactId 'ElectrackJobs'
+            version '0.0.1-SNAPSHOT'
+            from components.java
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-batch")
+    compile "org.springframework.boot:spring-boot-starter-data-mongodb:${springBootVersion}"
+    compile "org.apache.commons:commons-lang3:3.4"
+    compile "org.springframework.boot:spring-boot-starter-actuator"
+    compile "com.ganyo:gcm-server:1.0.2"
+    compile "org.apache.commons:commons-dbcp2:2.1.1"
+   	compile fileTree(include: ['*.jar'], dir: 'libs')
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}"
+    }
+}
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.9'
+}

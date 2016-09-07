@@ -1,0 +1,16 @@
+info:
+  description: "Electra Service"
+  apiDocumentation: "TBD"
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://electraUser:qwe123@ds011251.mlab.com:11251/electra_db  
+      
+logging: 
+  config:
+    classpath: logElectraService-dev.xml
+
+---
+spring:
+  profiles: cloud
